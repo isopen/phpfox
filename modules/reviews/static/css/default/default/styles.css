@@ -1,0 +1,48 @@
+.input_reviews{
+  border:1px solid #808080;
+  width:200px;
+  min-height:20px;
+  background:white;
+  outline:none;
+  padding:10px 10px 10px 10px;
+  overflow:hidden;
+  word-wrap:break-word;
+  margin-bottom:5px;
+}
+.button_reviews{
+  background:#808080;
+  color:white;
+  cursor:pointer;
+  text-align:center;
+  width:100px;
+  height:30px;
+  line-height:30px;
+  border-radius:3px 3px 3px 3px;
+  -webkit-transition: opacity 0.1s ease-out 0.1s;
+  -moz-transition: opacity 0.1s ease-out 0.1s;
+  -o-transition: opacity 0.1s ease-out 0.1s;
+  transition: opacity 0.1s ease-out 0.1s;
+}
+.button_reviews:hover{
+  opacity:0.8;
+}
+.text_reviews{
+  font-size:18px;
+  padding:5px 5px 5px 0px;
+}
+.box_reviews > div{
+  margin-bottom:10px;
+}
+.box_reviews > div > div:first-child{
+  color:#298ada;
+}
+.box_reviews > div > div:nth-child(2){
+  font-size:12px;
+}
+.box_reviews > div > div:last-child{
+  width:200px;
+  height:auto;
+  padding:10px 10px 10px 0px;
+  overflow:hidden;
+  word-wrap:break-word;
+}
