@@ -1,0 +1,82 @@
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
+
+//== Main
+@logoUrl: '/favicon.ico';; // Logo
+@bodyBg: #ffffff; // Body background color | color
+@textColor: #023254; // Main text color | color
+@fontFamilyBase:          'Open Sans', sans-serif; // Font family
+@fontSizeBase:            14px; // Base font size | size
+@lineHeightBase:          1.5; // Base line height |
+@lineHeightComputed:      floor((@fontSizeBase * @lineHeightBase));
+
+//== Containers
+@containerMaxWidth: 920px; // Container/Holder width
+@containerMaxWidthFull: 1190;
+@containerBg: #38576e; // Background color for container | color
+@contentWidth: 600px;
+
+//== Helpers
+@transition:                all 0.50s ease;
+@borderRadiusBase:        0px;
+@separator: "\00b7";
+@boxShadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+
+//== Links
+@linkColor:                @brandPrimary;
+@linkHoverColor:          darken(@linkColor, 15%);
+@linkHoverDecoration:     none;
+
+@linkFocus: #222;
+@linkFocusHover: @brandPrimary;
+
+//== Brand
+@brandPrimary:             #298ADA;
+@brandPrimaryColor: #fff;
+
+@brandSuccess:             #5cb85c;
+@brandInfo: #38576e;
+@brandWarning: #c75f5f;
+@brandDanger:              #d9534f;
+
+//== Columns
+@columnLeftWidth: 250px;
+@columnWidth: 300px;
+
+//== Navs
+@navBg: #38576e;
+@navColor: lighten(#FFF, 10%);
+@navWidth: 200px;
+
+//== Header
+@headerBg: lighten(#38576e, 30%);
+@headerColor: #ffffff;
+@headerHeight: 40px;
+@headerFontSize: @fontSizeBase - 1;
+
+//== Blocks
+@blockBg: #eee;
+@blockColor: #38576e;
+@blockRadius:              @borderRadiusBase;
+@blockMarginBottom:       20px;
+@blockBoxShadow: 0 0 50px 0 rgba(0, 0, 0, 0.4);
+@blockBoxShadowLight: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+
+@blockTitleBg: darken(@blockBg, 2%);
+@blockTitlePadding: 10px;
+@blockTitleColor: #38576e;
+@blockTitleSize: 18px;
+
+@blockContentPadding: 10px;
+@blockContentSize: @fontSizeBase - 1;
+
+@hoverCategories: true;
+
+//== Forms
+@formBg: @blockBg;
+@formColor: @blockColor;
+@formBorder: 1px transparent solid;
+
+@import "../../../../PF.Base/less/autoload";
+
+/** START CSS */

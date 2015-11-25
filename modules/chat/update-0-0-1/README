@@ -1,0 +1,59 @@
+PF.Base.
+
+1) module/mail/include/component/contoller/thread.class.php
+добавлена отправка сообщения в демона.
+
+2) module/mail/include/component/service/mail.class.php 
+внесены изменения в функции getMail(добавлен параметр iPage),
+getThreadedMail(добавлен параметр iPage, закоментирована строка с offset).
+
+3) module/mail/template/default/controller/thread.html.php
+внесены изменения в функцию mailViewMore.
+
+4) themes/2/flavor/2.css
+
+5) module/mail/template/default/block/entry.html.php
+сдвиг скроллинга в чате при взаимодействии с текущим сообщением(в конце темплейта <script>....</script>).
+
+6) module/friend/include/service/friend.class.php
+Изменент запрос(добавлено в ответ поле friend.is_online).
+
+7) В таблицу phpfox_friend добавить поле is_online.
+
+8) vendor/composer/autoload_namespaces.php autoload_psr4.php
+добавить отсутствующие строчки(необходимы для подключения wsclient).
+
+9) vendor/wsclient/
+скопировать.
+
+10) include/library/phpfox/socket/socket.class.php
+скопировать.(библиотека осуществляющая транспорт в сокет из phpfox).
+формат:
+array(
+  id=>int(array),
+  message=>array(
+    type=>"",
+    message=>""
+  )
+);
+
+11) module/chat/
+Скопировать.
+
+12) include/library/phpfox/phpfox/phpfox.class.php
+подлючены ichat.css,chat/chat.js
+
+PF.Src.
+
+1) ws/
+скопировать.
+
+8) ws/src/MyApp/config.php
+изменить настройки соединения к базе.
+
+9) ws/bin/chat-server.php
+если нужно, то можно поменять порт. По умолчанию 8080.
+
+Коннекторы к сокету:
+на клиенте: chat.js(в самом низу ws://localhost:8080).
+на сервере: include/library/phpfox/socket/socket.class.php(можно оставить по умолчанию ws://localhost:8080).
